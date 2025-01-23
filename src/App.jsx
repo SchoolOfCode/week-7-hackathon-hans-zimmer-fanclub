@@ -1,10 +1,10 @@
 import "./App.css";
-import Flashcard from "./Flashcards/flashcard.jsx";
+import FlashcardContainer from "./FlashcardContainer/FlashcardContainer.jsx";
 
 function App() {
   return (
     <>
-      <Flashcard />
+      <FlashcardContainer />
     </>
   );
 }
