@@ -1,7 +1,12 @@
 import "./App.css";
+import Flashcard from "./Flashcards/flashcard.jsx";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Flashcard />
+    </>
+  );
 }
 
 export default App;
