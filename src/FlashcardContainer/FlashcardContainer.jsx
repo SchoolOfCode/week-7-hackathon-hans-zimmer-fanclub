@@ -1,12 +1,13 @@
-import Flashcard from "../Flashcards/Flashcard.jsx"
+import Flashcard from "../Flashcards/Flashcard.jsx";
 
-function FlashcardContainer() {
-    return <div>
-    <Flashcard/>
-    <Flashcard/>
-    <Flashcard/> 
+function FlashcardContainer({testArray}) {
+    
+  return (
+    <div>
+  {testArray.map((index) =>  <Flashcard question={index.question} answer={index.answer} /> )}
     </div>
-
+  );
 }
 
-export default FlashcardContainer
+export default FlashcardContainer;
+  // <Flashcard/>

@@ -12,17 +12,18 @@ import { useState } from "react";
 // var for question
 // var for answer
 
-let question = "Does this button work?";
-let answer = "Yes it does!";
+// let question = "Does this button work?";
+// let answer = "Yes it does!";
 
 //add onClick with is true is false statement
 
-function Flashcard() {
+function Flashcard({ question, answer }) {
   const [isQuestion, setIsQuestion] = useState(true);
 
   function ToggleCard() {
     setIsQuestion(!isQuestion);
   }
+  
   return <button onClick={ToggleCard}>{isQuestion ? question : answer}</button>;
 }
 
