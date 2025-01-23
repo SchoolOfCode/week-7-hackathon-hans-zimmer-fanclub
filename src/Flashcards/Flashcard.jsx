@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 // When user clicks on button, answer appears
 
@@ -14,20 +15,15 @@ import React from "react";
 let question = "Does this button work?";
 let answer = "Yes it does!";
 
-function ToggleCard() {
-  cosnt[(isQuestion, setIsQuestion)] = useState(true);
-
-  if (isQuestion === true) {
-    setIsQuestion = false;
-  } else {
-    setIsQuestion = false;
-  }
-}
-
 //add onClick with is true is false statement
 
 function Flashcard() {
-  return <button onClick={ToggleCard}>{question}</button>;
+  const [isQuestion, setIsQuestion] = useState(true);
+
+  function ToggleCard() {
+    setIsQuestion(!isQuestion);
+  }
+  return <button onClick={ToggleCard}>{isQuestion ? question : answer}</button>;
 }
 
 export default Flashcard;
