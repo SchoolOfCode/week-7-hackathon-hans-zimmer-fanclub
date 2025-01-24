@@ -8,7 +8,7 @@ import { useState } from "react";
 
 // How do I add value to an array?
 //dunno
-//setTest array
+//setTest array style="color: green;"
 
 // Populate in app.jsx in the testArray
 //when this state is updated, it should update the dom
@@ -23,7 +23,7 @@ function Form({ mutateArray }) {
   return (
     <div className="form-container">
       <div>
-        <label htmlFor="cardQuestion">Question: </label>
+        <label htmlFor="cardQuestion" style={{ color: "lightblue"}}  >Question: </label>
         <input
           type="text"
           id="cardQuestion"
@@ -31,7 +31,7 @@ function Form({ mutateArray }) {
         ></input>
       </div>
       <div>
-        <label htmlFor="cardAnswer">Answer: </label>
+        <label htmlFor="cardAnswer" style={{ color: "lightblue"}}>Answer: </label>
         <input
           type="text"
           id="cardAnswer"
