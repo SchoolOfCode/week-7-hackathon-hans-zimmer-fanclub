@@ -21,19 +21,27 @@ function Form({ mutateArray }) {
     mutateArray(questionValue, answerValue);
   }
   return (
-    <>
-      <input
-        type="text"
-        id="cardQuestion"
-        onInput={(e) => setQuestionValue(e.target.value)}
-      ></input>
-      <input
-        type="text"
-        id="cardAnswer"
-        onInput={(e) => setAnswerValue(e.target.value)}
-      ></input>
-      <button onClick={handleSubmit}></button>
-    </>
+    <div className="form-container">
+      <div>
+        <label htmlFor="cardQuestion">Question: </label>
+        <input
+          type="text"
+          id="cardQuestion"
+          onInput={(e) => setQuestionValue(e.target.value)}
+        ></input>
+      </div>
+      <div>
+        <label htmlFor="cardAnswer">Answer: </label>
+        <input
+          type="text"
+          id="cardAnswer"
+          onInput={(e) => setAnswerValue(e.target.value)}
+        ></input>
+      </div>
+      <button className="form-button" onClick={handleSubmit}>
+        Add
+      </button>
+    </div>
   );
 }
 
