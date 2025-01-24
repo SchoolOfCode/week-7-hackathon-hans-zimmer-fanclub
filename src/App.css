@@ -26,8 +26,6 @@
 }
 
 .header {
-  position: fixed;
-  top: 0;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -35,9 +33,6 @@
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100vw;
   z-index: 10;
   display: flex;

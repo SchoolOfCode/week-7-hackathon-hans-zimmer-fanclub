@@ -17,11 +17,12 @@ function App() {
       id: 2,
       question: "Which movie was Hans Zimmer's 100th score",
       answer: "The Last Samurai (2003)",
-    },{
+    },
+    {
       id: 3,
       question: "What are props?",
-      answer: "Data passed from parent to child components"
-  }
+      answer: "Data passed from parent to child components",
+    },
   ]);
 
   function mutateArray(questionValue, answerValue) {
@@ -40,12 +41,21 @@ function App() {
   }
 
   return (
-    <>
-      <Headers />
-      <Form mutateArray={mutateArray} />
-      <FlashcardContainer testArray={testArray} />
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        height: "100vh",
+      }}
+    >
+      <div>
+        <Headers />
+        <Form mutateArray={mutateArray} />
+        <FlashcardContainer testArray={testArray} />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
