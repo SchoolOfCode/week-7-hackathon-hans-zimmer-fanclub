@@ -1,4 +1,3 @@
-import React from "react";
 import header from "../assets/Header.png";
 
 const Headers = () => {

@@ -2,7 +2,7 @@ import Flashcard from "../Flashcards/Flashcard.jsx";
 
 function FlashcardContainer({ testArray }) {
   return (
-    <div>
+    <div className="flashcard-container">
       {testArray.map((index) => (
         <Flashcard
           key={index.id}

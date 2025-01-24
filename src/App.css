@@ -4,10 +4,24 @@
   gap: 2rem;
   width: 100vw;
   background-color: #1a1d26;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .form-button {
   align-items: center;
+  background-color: rgb(51, 55, 107);
+}
+
+.flashcard {
+  height: 200px;
+  width: 300px;
+}
+
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .header {

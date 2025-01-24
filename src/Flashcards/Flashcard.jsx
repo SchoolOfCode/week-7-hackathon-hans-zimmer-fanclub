@@ -7,7 +7,13 @@ function Flashcard({ question, answer }) {
     setIsQuestion(!isQuestion);
   }
 
-  return <button onClick={ToggleCard}>{isQuestion ? question : answer}</button>;
+  return (
+    <div>
+      <button className="flashcard" onClick={ToggleCard}>
+        {isQuestion ? question : answer}
+      </button>
+    </div>
+  );
 }
 
 export default Flashcard;
