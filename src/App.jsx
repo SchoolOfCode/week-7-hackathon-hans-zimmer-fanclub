@@ -21,8 +21,6 @@ function App() {
   ]);
 
   function mutateArray(questionValue, answerValue) {
-    // setTestArray()
-
     //copy test array
     const clonedTestArray = [...testArray];
 
@@ -33,7 +31,7 @@ function App() {
       question: questionValue,
       answer: answerValue,
     };
-
+    //Append new values to the existing array
     setTestArray([...clonedTestArray, newCard]);
   }
 
